@@ -1,0 +1,24 @@
+{
+    "name": "billitech/sly",
+    "description": "php template engine",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvester Charles",
+            "email": "silverprince4134u@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+     "autoload": {
+        "psr-4": {
+            "Billitech\\Sly\\": "src/"
+        }
+    },
+}
