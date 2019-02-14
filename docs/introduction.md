@@ -20,15 +20,15 @@ composer require "billitech/sly:~0.1"
 
 ```php
 //place at the top of your script
-use SF\Sly\Sly;
-use SF\Sly\FileLoader;
+use Billitech\Sly\Sly;
+use Billitech\Sly\FileLoader;
 $loader = new FileLoader(['/path/to/your/templates']);
 $sly = new Sly($loader, '/path/to/store/compiled_files');
 
-echo $sly->render('index.razor', ['title' => 'Sly Template Ingine']);
+echo $sly->render('index.sly', ['title' => 'Sly Template Ingine']);
 ```
 
-Then Create a file with the name <b>index.razor</b> in the path you specify when creating the FileLoader instance and put the following code in it :
+Then Create a file with the name **index.sly** in the path you specify when creating the FileLoader instance and put the following code in it :
 
 ```sly
 @( title )
